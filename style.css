@@ -18,6 +18,15 @@ body {
   background-size: cover;
 }
 
+.thetitle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 4rem;
+  color: white;
+  font-family: Overpass;
+  font-weight: 800;
+}
 body {
   overflow-x: hidden;
 }
