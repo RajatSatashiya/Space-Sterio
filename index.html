@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celestial Mp3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <div>
+                <i class="fas fa-step-backward prev"></i>
+                <i class="fas fa-backward backward"></i>
+                <i class="far fa-play-circle start"></i>
+                <i class="fas fa-forward forward"></i>
+                <i class="fas fa-step-forward next"></i>
+            </div>
+
+            <div>
+                <i class="fas fa-minus-circle voldown"></i>
+                <span class="voltext">100%</span>
+                <i class="fas fa-plus-circle volup"></i>
+            </div>
+
+            <div class="playing">Now Playing:</div>
+
+            <audio class="music" controlsList="nodownload">
+                <source class="musicSource" src="./songs/Classic Soft Saxophone Jazz Music.mp3"
+                    type="audio/mpeg" />
+            </audio>
+            
+        </div>
+    </div>
+
+    <div>
+        <button class="sidebar-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <!-- <img src="logo.svg" alt="nothing" class="logo"> -->
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+        
+            </div>
+            <div class="sidebar-heading">
+                Choose a track...
+
+                <ul class="tracks">
+                    <li class="track">Lofi</li>
+                    <li class="track">Retro Jazz</li>
+                    <li class="track">Classical Music (1800s - 1950)</li>
+                    <li class="track">Roman Music (27BCE - 476)</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
